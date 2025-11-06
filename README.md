@@ -3,7 +3,8 @@
 
 Esse projeto tem como objetivo de utilizar Pipelines CI/CD no Azure é automatizar o processo de integração contínua (CI) e entrega contínua (CD) de seus aplicativos, garantindo que o ciclo de vida do desenvolvimento de software seja mais eficiente, confiável e escalável. O Azure DevOps oferece uma série de ferramentas para implementar esses pipelines, ajudando a otimizar a entrega de software e a reduzir erros humanos durante o desenvolvimento, testes e produção.
 
-<img width="829" height="494" alt="image" src="https://github.com/user-attachments/assets/6c4f9746-067d-4d4c-a21e-6bf0ead6221d" />
+<img width="811" height="441" alt="image" src="https://github.com/user-attachments/assets/758b69f9-099a-492c-9478-d4b94bd3d204" />
+
 
 ---
 
