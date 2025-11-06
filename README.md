@@ -165,7 +165,14 @@ DbHost="${DbHost:-<IP_DO_BANCO>}"
 
 ---
 
-Depuração e Logs
+## Depuração e Logs
+**caso for fazer testes no WorkBench MySQL**
+- Configure assim.
+- Lembre-se de colocar o nome do banco **criado pelo infra-banco.sh**, em Default Schema.
+
+<img width="1454" height="836" alt="image" src="https://github.com/user-attachments/assets/ba7607b1-80fe-44d3-897a-9ba20d763e7b" />
+
+---
 
 Para verificar os logs do container MySQL, você pode usar o comando:
 ```bash
