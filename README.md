@@ -5,7 +5,11 @@ Esse projeto tem como objetivo de utilizar Pipelines CI/CD no Azure é automatiz
 
 <img width="811" height="441" alt="image" src="https://github.com/user-attachments/assets/758b69f9-099a-492c-9478-d4b94bd3d204" />
 
+### Caso queira conferir na integra os repositorio do projeto em .NET ASPNET CORE:
+[github.com/christianmilfont/DOTNET-MOTTU
+](https://github.com/christianmilfont/DOTNET-MOTTU)
 
+**(O REPOS DO AZURE SEMPRE ESTARÁ MAIS ATUALIZADO, ACOMPANHE POR LÁ!)**
 ---
 
 ## Triggers adicionados
