@@ -5,11 +5,20 @@ Esse projeto tem como objetivo de utilizar Pipelines CI/CD no Azure é automatiz
 
 <img width="811" height="441" alt="image" src="https://github.com/user-attachments/assets/758b69f9-099a-492c-9478-d4b94bd3d204" />
 
-### Caso queira conferir na integra os repositorio do projeto em .NET ASPNET CORE:
+### Projeto nas Organizações do Portal Azure:
+<img width="484" height="324" alt="image" src="https://github.com/user-attachments/assets/ceb2cdc9-0fc0-4d87-b826-1200b7b5574b" />
+
+```
+    https://dev.azure.com/MOTTU-CICD/
+    ou
+    https://dev.azure.com/MOTTU-CICD/Sprint%204%20-%20Setup%20Azure%20for%20CI-CD
+```
+
+### Caso queira conferir os arquvios do projeto em .NET ASPNET CORE, deixo aqui o link para o repositório no GitHub:
 [github.com/christianmilfont/DOTNET-MOTTU
 ](https://github.com/christianmilfont/DOTNET-MOTTU)
 
-**(O REPOS DO AZURE SEMPRE ESTARÁ MAIS ATUALIZADO, ACOMPANHE POR LÁ!)**
+**(O REPOS DO AZURE NORMALMENTE ESTARÁ MAIS ATUALIZADO EM RELAÇÃO AOS ARQUIVOS DE DEVOPS, ACOMPANHE POR LÁ!)**
 
 ---
 
