@@ -207,7 +207,7 @@ Exemplo de conexão no infra-app.sh:
 DbHost="${DbHost:-<IP_DO_BANCO>}"
 ```
 
-**Substitua <IP_DO_BANCO> pelo IP retornado pelo script infra-banco.sh.**
+**Substitua <IP_DO_BANCO> pelo IP retornado, gerado pelo script infra-banco.sh.**
 
 ---
 
