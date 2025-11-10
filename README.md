@@ -25,7 +25,9 @@ Após o sucesso da pipeline de build, uma pipeline de entrega contínua (CD) é 
     https://dev.azure.com/MOTTU-CICD/Sprint%204%20-%20Setup%20Azure%20for%20CI-CD
 ```
 
-### Caso queira conferir os arquvios do projeto em .NET ASPNET CORE, deixo aqui o link para o repositório no GitHub:
+---
+
+### Caso queira conferir os arquvios (.sh, .json., .cs) do projeto em .NET ASPNET CORE, deixo aqui o link para o repositório no GitHub:
 [github.com/christianmilfont/DOTNET-MOTTU
 ](https://github.com/christianmilfont/DOTNET-MOTTU)
 
