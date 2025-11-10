@@ -211,6 +211,23 @@ DbHost="${DbHost:-<IP_DO_BANCO>}"
 
 ---
 
+## Sobre CRUD das entidades, acesse o arquivo scripts.sql caso queria testar as requisições diretamente e manualmente pelo banco de dados. Caso queira mais detalhes sobre a sequencia de criação acesse também o repositório do projeto de .NET, analisando o README conseguirá mais informações.
+
+Aqui vai um resumo básico das entidades e como elas se correlacionam:
+
+```bash
+ Tabelas:
+  
+  Patios: armazena dados do pátio.
+  
+  Motos: armazena motos vinculadas a pátios.
+  
+  Cliente: pode ou não ter uma moto anexada a ele.
+  
+  Regras de integridade e relacionamentos definidas pelo EF Core via migrations.
+```
+---
+
 ## Depuração e Logs
 **caso for fazer testes no WorkBench MySQL**
 - Configure assim.
