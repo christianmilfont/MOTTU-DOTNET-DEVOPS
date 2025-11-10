@@ -1,9 +1,20 @@
 # MOTTU-DOTNET-DEVOPS
 # Pipelines CI/CD
 
-Esse projeto tem como objetivo de utilizar Pipelines CI/CD no Azure é automatizar o processo de integração contínua (CI) e entrega contínua (CD) de seus aplicativos, garantindo que o ciclo de vida do desenvolvimento de software seja mais eficiente, confiável e escalável. O Azure DevOps oferece uma série de ferramentas para implementar esses pipelines, ajudando a otimizar a entrega de software e a reduzir erros humanos durante o desenvolvimento, testes e produção.
+### Esse projeto tem como objetivo de utilizar Pipelines CI/CD no Azure é automatizar o processo de integração contínua (CI) e entrega contínua (CD) de seus aplicativos, garantindo que o ciclo de vida do desenvolvimento de software seja mais eficiente, confiável e escalável. O Azure DevOps oferece uma série de ferramentas para implementar esses pipelines, ajudando a otimizar a entrega de software e a reduzir erros humanos durante o desenvolvimento, testes e produção.
 
 <img width="811" height="441" alt="image" src="https://github.com/user-attachments/assets/758b69f9-099a-492c-9478-d4b94bd3d204" />
+
+## Para sanar dúvidas nosso fluxo das Pipelines de CI/CD dentro do Portal Azure funciona da seguinte forma:
+O sistema permite o gerenciamento de funcionalidades versionadas e rastreáveis dentro de um fluxo ágil, onde cada commit e pull request é vinculado a tasks criadas no Azure Boards, garantindo rastreabilidade e controle de mudanças. 
+
+Ao submeter um pull request, o processo de integração contínua (CI) é automaticamente acionado via triggers, realizando o build da aplicação, a execução de testes automatizados e a criação dos recursos necessários no Azure, como o App Service, grupo de recursos e tabelas de banco de dados. 
+
+Além disso, foi desenvolvido um script .sh executado via Git Bash, responsável por provisionar um banco de dados MySQL em nuvem. Esse script cria o grupo de recursos, realiza o build da imagem oficial do MySQL, publica a imagem no Azure Container Registry (ACR) e instancia o banco de dados para uso na aplicação. Lembrando que nosso app service para criar uma infra inicial utilizando na pipeline de CI, também está presente no Repos como um .sh, porém ele é executado dentro da pipeline de forma automática, sendo reponsável por conectar ao banco de dados e subir as tabelas também. 
+
+Após o sucesso da pipeline de build, uma pipeline de entrega contínua (CD) é acionada automaticamente, utilizando o artefato gerado para implantar a versão mais recente da aplicação no ambiente de nuvem. 
+
+---
 
 ### Projeto nas Organizações do Portal Azure:
 <img width="484" height="324" alt="image" src="https://github.com/user-attachments/assets/ceb2cdc9-0fc0-4d87-b826-1200b7b5574b" />
@@ -84,7 +95,26 @@ Este script é responsável por:
 
 ---
 
-## Como Rodar os Scripts
+## Como Rodar os Scripts / Projeto
+Lembrando que ao subir o script do banco, deverá alterar a string **DefaultConnection** (url do banco) de conexâo no appsettings dentro do projeto .NET do Repos:
+
+<img width="801" height="456" alt="image" src="https://github.com/user-attachments/assets/ac1dc09d-d537-417d-b71c-b962eafff981" />
+
+---
+
+Lembrar de alterar também o IP de conexão presente no arquivo **infra-app.sh**:
+
+<img width="473" height="300" alt="image" src="https://github.com/user-attachments/assets/45d5026b-44b2-4963-b866-afe5faa0e1e2" />
+
+---
+
+Caso seja necessário, adicione/altere as variaveis de ambiente dentro da **Pipeline de CI** ou de **CD**:
+<img width="985" height="41" alt="image" src="https://github.com/user-attachments/assets/54e5c45c-1ba8-4ec6-a14a-d106d8388068" />
+
+<img width="1505" height="290" alt="image" src="https://github.com/user-attachments/assets/b282baf7-d980-4d25-a22c-9bc8b4011cbf" />
+
+---
+
 ### Passo 1: Preparar o ambiente
 
 Antes de rodar os scripts, é necessário garantir que você está com o ambiente correto:
